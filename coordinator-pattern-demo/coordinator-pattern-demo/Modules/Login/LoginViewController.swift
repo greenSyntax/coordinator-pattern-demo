@@ -9,6 +9,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    weak var coordinator: AppCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,15 +20,12 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func buttonLoginAction(_ sender: Any) {
-        let viewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        let loginNavigationController = UINavigationController(rootViewController: viewController)
-        UIApplication.shared.keyWindow?.rootViewController = loginNavigationController
+        coordinator?.routeToHome()
     }
     
     
     @IBAction func buttonSignupAction(_ sender: Any) {
-        let viewController = SignupViewController(nibName: "SignupViewController", bundle: nil)
-        self.navigationController?.pushViewController(viewController, animated: true)
+        coordinator?.routeToSignUp()
     }
     
 }

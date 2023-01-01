@@ -19,6 +19,8 @@
 		6DCCA02C2961D48200B5D6EE /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCCA02B2961D48200B5D6EE /* SignupViewController.xib */; };
 		6DCCA02E2961D5BC00B5D6EE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCCA02D2961D5BC00B5D6EE /* HomeViewController.xib */; };
 		6DCCA0302961D6BF00B5D6EE /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCCA02F2961D6BF00B5D6EE /* AboutViewController.xib */; };
+		6DCCA033296210CC00B5D6EE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCCA032296210CC00B5D6EE /* Coordinator.swift */; };
+		6DCCA0602962355900B5D6EE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCCA05F2962355900B5D6EE /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		6DCCA02B2961D48200B5D6EE /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		6DCCA02D2961D5BC00B5D6EE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		6DCCA02F2961D6BF00B5D6EE /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		6DCCA032296210CC00B5D6EE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6DCCA05F2962355900B5D6EE /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		6DCCA002295EF50A00B5D6EE /* coordinator-pattern-demo */ = {
 			isa = PBXGroup;
 			children = (
+				6DCCA031296210BE00B5D6EE /* Coordinator */,
 				6DCCA020295EF56A00B5D6EE /* Modules */,
 				6DCCA003295EF50A00B5D6EE /* AppDelegate.swift */,
 				6DCCA005295EF50A00B5D6EE /* SceneDelegate.swift */,
@@ -123,6 +128,15 @@
 				6DCCA01F295EF56400B5D6EE /* About */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		6DCCA031296210BE00B5D6EE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6DCCA032296210CC00B5D6EE /* Coordinator.swift */,
+				6DCCA05F2962355900B5D6EE /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +217,10 @@
 				6DCCA024295F2CCC00B5D6EE /* SignupViewController.swift in Sources */,
 				6DCCA028295F2D0D00B5D6EE /* AboutViewController.swift in Sources */,
 				6DCCA004295EF50A00B5D6EE /* AppDelegate.swift in Sources */,
+				6DCCA0602962355900B5D6EE /* AppCoordinator.swift in Sources */,
 				6DCCA006295EF50A00B5D6EE /* SceneDelegate.swift in Sources */,
 				6DCCA026295F2CEB00B5D6EE /* HomeViewController.swift in Sources */,
+				6DCCA033296210CC00B5D6EE /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

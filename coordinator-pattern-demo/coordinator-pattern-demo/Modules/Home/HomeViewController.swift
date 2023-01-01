@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    weak var coordinator: AppCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,16 +20,12 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func buttonAboutAction(_ sender: Any) {
-        let viewController = AboutViewController(nibName: "AboutViewController", bundle: nil)
-        self.navigationController?.pushViewController(viewController, animated: true)
+        coordinator?.routeToAbout()
     }
  
     
     @IBAction func buttonLogoutAction(_ sender: Any) {
-        let viewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
-        let navigationController = UINavigationController(rootViewController: viewController)
         
-        UIApplication.shared.keyWindow?.rootViewController = navigationController
     }
     
 }
